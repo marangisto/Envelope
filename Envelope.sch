@@ -31,11 +31,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:Envelope-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -45,4 +46,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 2500 2100 1950 1800
+U 5B5A3E1E
+F0 "MCU328" 60
+F1 "MCU328.sch" 60
+$EndSheet
 $EndSCHEMATC
