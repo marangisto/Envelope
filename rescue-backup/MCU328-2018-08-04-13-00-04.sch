@@ -1,6 +1,38 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:Envelope-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,11 +47,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Envelope-rescue:ATMEGA328P-AU U1
+L ATMEGA328P-AU U1
 U 1 1 5B5A3E29
 P 5450 3400
-AR Path="/5B5A3E29" Ref="U1"  Part="1" 
-AR Path="/5B5A3E1E/5B5A3E29" Ref="U1"  Part="1" 
 F 0 "U1" H 4700 4650 50  0000 L BNN
 F 1 "ATMEGA328P-AU" H 5850 2000 50  0000 L BNN
 F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 5450 3400 50  0001 C CIN
@@ -28,7 +58,7 @@ F 3 "" H 5450 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:Conn_02x03_Odd_Even J1
+L Conn_02x03_Odd_Even J1
 U 1 1 5B5A3ED4
 P 8750 2800
 F 0 "J1" H 8800 3000 50  0000 C CNN
@@ -39,7 +69,7 @@ F 3 "" H 8750 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
+L GND #PWR018
 U 1 1 5B5A4013
 P 9050 3400
 F 0 "#PWR018" H 9050 3150 50  0001 C CNN
@@ -50,7 +80,7 @@ F 3 "" H 9050 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:R R1
+L R R1
 U 1 1 5B5A4146
 P 8550 2350
 F 0 "R1" V 8630 2350 50  0000 C CNN
@@ -61,7 +91,7 @@ F 3 "" H 8550 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:SW_Push SW1
+L SW_Push SW1
 U 1 1 5B5A425A
 P 8800 3300
 F 0 "SW1" H 8850 3400 50  0000 L CNN
@@ -72,7 +102,7 @@ F 3 "" H 8800 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR019
+L GND #PWR019
 U 1 1 5B5A4503
 P 4450 4700
 F 0 "#PWR019" H 4450 4450 50  0001 C CNN
@@ -83,7 +113,7 @@ F 3 "" H 4450 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:C C1
+L C C1
 U 1 1 5B5A4646
 P 4350 3050
 F 0 "C1" H 4375 3150 50  0000 L CNN
@@ -94,7 +124,7 @@ F 3 "" H 4350 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR020
+L GND #PWR020
 U 1 1 5B5A46BA
 P 4350 3250
 F 0 "#PWR020" H 4350 3000 50  0001 C CNN
@@ -105,7 +135,7 @@ F 3 "" H 4350 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:Conn_01x06 J2
+L Conn_01x06 J2
 U 1 1 5B5A4966
 P 9050 4100
 F 0 "J2" H 9050 4400 50  0000 C CNN
@@ -116,7 +146,7 @@ F 3 "" H 9050 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR021
+L GND #PWR021
 U 1 1 5B5A4997
 P 8650 3950
 F 0 "#PWR021" H 8650 3700 50  0001 C CNN
@@ -165,7 +195,7 @@ RXD/PD0
 Text HLabel 6450 4000 2    60   BiDi ~ 0
 TXD/PD1
 $Comp
-L Envelope-rescue:C C2
+L C C2
 U 1 1 5B5B1083
 P 3350 2450
 F 0 "C2" H 3375 2550 50  0000 L CNN
@@ -176,7 +206,7 @@ F 3 "" H 3350 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:C C3
+L C C3
 U 1 1 5B5B10EB
 P 3650 2450
 F 0 "C3" H 3675 2550 50  0000 L CNN
@@ -187,7 +217,7 @@ F 3 "" H 3650 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:C C4
+L C C4
 U 1 1 5B5B112B
 P 3950 2450
 F 0 "C4" H 3975 2550 50  0000 L CNN
@@ -198,7 +228,7 @@ F 3 "" H 3950 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR022
+L GND #PWR022
 U 1 1 5B5B12B9
 P 3650 2700
 F 0 "#PWR022" H 3650 2450 50  0001 C CNN
@@ -213,7 +243,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 2800 8550 2800
 Wire Wire Line
-	8550 2500 8550 2900
+	8550 2500 8550 3750
 Wire Wire Line
 	8550 3750 6450 3750
 Wire Wire Line
@@ -223,9 +253,9 @@ Wire Wire Line
 Wire Wire Line
 	9150 2600 6450 2600
 Wire Wire Line
-	9050 2900 9050 3300
+	9050 2900 9050 3400
 Wire Wire Line
-	9050 2050 9050 2200
+	9050 2050 9050 2700
 Wire Wire Line
 	8550 2200 9050 2200
 Connection ~ 9050 2200
@@ -237,17 +267,17 @@ Wire Wire Line
 	9000 3300 9050 3300
 Connection ~ 9050 3300
 Wire Wire Line
-	4450 2050 4450 2300
+	4450 2050 4450 2600
 Wire Wire Line
 	4450 2400 4550 2400
 Wire Wire Line
-	3350 2300 3650 2300
+	3350 2300 4550 2300
 Connection ~ 4450 2300
 Wire Wire Line
 	4450 2600 4550 2600
 Connection ~ 4450 2400
 Wire Wire Line
-	4450 4400 4450 4500
+	4450 4400 4450 4700
 Wire Wire Line
 	4450 4400 4550 4400
 Wire Wire Line
@@ -283,12 +313,12 @@ Wire Wire Line
 Connection ~ 3650 2300
 Connection ~ 3950 2300
 Wire Wire Line
-	3350 2600 3650 2600
+	3350 2600 3950 2600
 Connection ~ 3650 2600
 Wire Wire Line
 	3650 2700 3650 2600
 $Comp
-L Envelope-rescue:Crystal Y1
+L Crystal Y1
 U 1 1 5B5B1591
 P 7150 3200
 F 0 "Y1" H 7150 3350 50  0000 C CNN
@@ -301,17 +331,17 @@ $EndComp
 Wire Wire Line
 	6450 2900 7150 2900
 Wire Wire Line
-	7150 2900 7150 3000
+	7150 2900 7150 3050
 Wire Wire Line
 	7150 3350 7150 3400
 Wire Wire Line
-	6900 3400 7150 3400
+	6900 3400 7300 3400
 Wire Wire Line
 	6900 3400 6900 3000
 Wire Wire Line
 	6900 3000 6450 3000
 $Comp
-L Envelope-rescue:C C5
+L C C5
 U 1 1 5B5B1AA8
 P 7450 3000
 F 0 "C5" H 7475 3100 50  0000 L CNN
@@ -322,7 +352,7 @@ F 3 "" H 7450 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:C C6
+L C C6
 U 1 1 5B5B1AEC
 P 7450 3400
 F 0 "C6" H 7475 3500 50  0000 L CNN
@@ -339,11 +369,11 @@ Connection ~ 7150 3000
 Wire Wire Line
 	7600 3000 7650 3000
 Wire Wire Line
-	7650 3000 7650 3400
+	7650 3000 7650 3500
 Wire Wire Line
 	7650 3400 7600 3400
 $Comp
-L power:GND #PWR023
+L GND #PWR023
 U 1 1 5B5B1C9F
 P 7650 3500
 F 0 "#PWR023" H 7650 3250 50  0001 C CNN
@@ -355,7 +385,7 @@ F 3 "" H 7650 3500 50  0001 C CNN
 $EndComp
 Connection ~ 7650 3400
 $Comp
-L power:+5V #PWR024
+L +5V #PWR024
 U 1 1 5B5DE425
 P 4450 2050
 F 0 "#PWR024" H 4450 1900 50  0001 C CNN
@@ -366,7 +396,7 @@ F 3 "" H 4450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR025
+L +5V #PWR025
 U 1 1 5B5DE52A
 P 9050 2050
 F 0 "#PWR025" H 9050 1900 50  0001 C CNN
@@ -379,34 +409,4 @@ $EndComp
 NoConn ~ 8850 4000
 NoConn ~ 8850 4100
 NoConn ~ 8850 4400
-Wire Wire Line
-	9050 2200 9050 2700
-Wire Wire Line
-	8550 2900 8550 3300
-Wire Wire Line
-	8550 3300 8550 3750
-Wire Wire Line
-	9050 3300 9050 3400
-Wire Wire Line
-	4450 2300 4450 2400
-Wire Wire Line
-	4450 2300 4550 2300
-Wire Wire Line
-	4450 2400 4450 2600
-Wire Wire Line
-	4450 4500 4450 4600
-Wire Wire Line
-	4450 4600 4450 4700
-Wire Wire Line
-	3650 2300 3950 2300
-Wire Wire Line
-	3950 2300 4450 2300
-Wire Wire Line
-	3650 2600 3950 2600
-Wire Wire Line
-	7150 3400 7300 3400
-Wire Wire Line
-	7150 3000 7150 3050
-Wire Wire Line
-	7650 3400 7650 3500
 $EndSCHEMATC

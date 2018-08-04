@@ -1,6 +1,38 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:Envelope-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -40,7 +72,7 @@ F19 "RXD/PD0" B R 8400 6050 60
 F20 "TXD/PD1" B R 8400 6150 60 
 $EndSheet
 $Comp
-L Envelope-rescue:POT RV5
+L POT RV5
 U 1 1 5B5CCF20
 P 3950 5550
 F 0 "RV5" V 3775 5550 50  0000 C CNN
@@ -51,7 +83,7 @@ F 3 "" H 3950 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:POT RV4
+L POT RV4
 U 1 1 5B5CCFEC
 P 3550 5550
 F 0 "RV4" V 3375 5550 50  0000 C CNN
@@ -62,7 +94,7 @@ F 3 "" H 3550 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:POT RV3
+L POT RV3
 U 1 1 5B5CD364
 P 3150 5550
 F 0 "RV3" V 2975 5550 50  0000 C CNN
@@ -73,7 +105,7 @@ F 3 "" H 3150 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:POT RV2
+L POT RV2
 U 1 1 5B5CD40D
 P 2750 5550
 F 0 "RV2" V 2575 5550 50  0000 C CNN
@@ -84,7 +116,7 @@ F 3 "" H 2750 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:POT RV1
+L POT RV1
 U 1 1 5B5CD4B9
 P 2350 5550
 F 0 "RV1" V 2175 5550 50  0000 C CNN
@@ -95,7 +127,7 @@ F 3 "" H 2350 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR01
+L +5V #PWR01
 U 1 1 5B5CDF81
 P 2350 4900
 F 0 "#PWR01" H 2350 4750 50  0001 C CNN
@@ -106,7 +138,7 @@ F 3 "" H 2350 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L GND #PWR02
 U 1 1 5B5CE023
 P 2350 6250
 F 0 "#PWR02" H 2350 6000 50  0001 C CNN
@@ -117,7 +149,7 @@ F 3 "" H 2350 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:R R2
+L R R2
 U 1 1 5B5CF46C
 P 9500 5000
 F 0 "R2" V 9580 5000 50  0000 C CNN
@@ -128,7 +160,7 @@ F 3 "" H 9500 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:R R3
+L R R3
 U 1 1 5B5CF517
 P 10000 5000
 F 0 "R3" V 10080 5000 50  0000 C CNN
@@ -139,7 +171,7 @@ F 3 "" H 10000 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:R R4
+L R R4
 U 1 1 5B5CF5DE
 P 10500 5000
 F 0 "R4" V 10580 5000 50  0000 C CNN
@@ -150,7 +182,7 @@ F 3 "" H 10500 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:C C12
+L C C12
 U 1 1 5B5CF696
 P 9750 5300
 F 0 "C12" H 9775 5400 50  0000 L CNN
@@ -161,7 +193,7 @@ F 3 "" H 9750 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:C C13
+L C C13
 U 1 1 5B5CF94F
 P 10250 5300
 F 0 "C13" H 10275 5400 50  0000 L CNN
@@ -172,7 +204,7 @@ F 3 "" H 10250 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:C C14
+L C C14
 U 1 1 5B5CFA11
 P 10750 5300
 F 0 "C14" H 10775 5400 50  0000 L CNN
@@ -183,7 +215,7 @@ F 3 "" H 10750 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 5B5CFE14
 P 10250 5750
 F 0 "#PWR03" H 10250 5500 50  0001 C CNN
@@ -194,7 +226,7 @@ F 3 "" H 10250 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR04
+L +12V #PWR04
 U 1 1 5B5D2255
 P 11850 4800
 F 0 "#PWR04" H 11850 4650 50  0001 C CNN
@@ -205,7 +237,7 @@ F 3 "" H 11850 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR9
+L -12V #PWR9
 U 1 1 5B5D2305
 P 11850 5500
 F 0 "#PWR9" H 11850 5600 50  0001 C CNN
@@ -216,7 +248,7 @@ F 3 "" H 11850 5500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Envelope-rescue:R R6
+L R R6
 U 1 1 5B5D25B0
 P 11250 5300
 F 0 "R6" V 11330 5300 50  0000 C CNN
@@ -227,7 +259,7 @@ F 3 "" H 11250 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:R R7
+L R R7
 U 1 1 5B5D3A15
 P 12550 5350
 F 0 "R7" V 12630 5350 50  0000 C CNN
@@ -238,7 +270,7 @@ F 3 "" H 12550 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:R R5
+L R R5
 U 1 1 5B5D3AD4
 P 13000 5100
 F 0 "R5" V 13080 5100 50  0000 C CNN
@@ -249,7 +281,7 @@ F 3 "" H 13000 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:Audio-Jack-2_Switch J4
+L Audio-Jack-2_Switch J4
 U 1 1 5B5D3B9F
 P 13850 5200
 F 0 "J4" H 13800 5375 50  0000 C CNN
@@ -260,7 +292,7 @@ F 3 "" H 14100 5300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L GND #PWR05
 U 1 1 5B5D3F24
 P 12550 5800
 F 0 "#PWR05" H 12550 5550 50  0001 C CNN
@@ -271,7 +303,7 @@ F 3 "" H 12550 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L GND #PWR06
 U 1 1 5B5D4469
 P 14050 5800
 F 0 "#PWR06" H 14050 5550 50  0001 C CNN
@@ -282,7 +314,7 @@ F 3 "" H 14050 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:TL072 U3
+L TL072 U3
 U 1 1 5B5D5FBE
 P 11950 5100
 F 0 "U3" H 11950 5300 50  0000 L CNN
@@ -310,7 +342,7 @@ NoConn ~ 8500 6750
 NoConn ~ 6350 7350
 NoConn ~ 6350 7450
 $Comp
-L Envelope-rescue:Audio-Jack-2_Switch J5
+L Audio-Jack-2_Switch J5
 U 1 1 5B5DED59
 P 2350 8500
 F 0 "J5" H 2300 8675 50  0000 C CNN
@@ -321,7 +353,7 @@ F 3 "" H 2600 8600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:Audio-Jack-2_Switch J6
+L Audio-Jack-2_Switch J6
 U 1 1 5B5DEE1B
 P 2350 2400
 F 0 "J6" H 2300 2575 50  0000 C CNN
@@ -332,7 +364,7 @@ F 3 "" H 2600 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:Audio-Jack-2_Switch J7
+L Audio-Jack-2_Switch J7
 U 1 1 5B5DEEF3
 P 2350 3700
 F 0 "J7" H 2300 3875 50  0000 C CNN
@@ -343,7 +375,7 @@ F 3 "" H 2600 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:Audio-Jack-2_Switch J8
+L Audio-Jack-2_Switch J8
 U 1 1 5B5DEFC7
 P 13850 7200
 F 0 "J8" H 13800 7375 50  0000 C CNN
@@ -354,7 +386,7 @@ F 3 "" H 14100 7300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L GND #PWR07
 U 1 1 5B5DF509
 P 14050 7850
 F 0 "#PWR07" H 14050 7600 50  0001 C CNN
@@ -365,9 +397,9 @@ F 3 "" H 14050 7850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 5700 2350 6000
+	2350 5700 2350 6250
 Wire Wire Line
-	2350 6000 2750 6000
+	2350 6000 3950 6000
 Wire Wire Line
 	3950 6000 3950 5700
 Wire Wire Line
@@ -380,9 +412,9 @@ Wire Wire Line
 	2750 5700 2750 6000
 Connection ~ 2750 6000
 Wire Wire Line
-	2350 4900 2350 5100
+	2350 4900 2350 5400
 Wire Wire Line
-	2350 5100 2750 5100
+	2350 5100 3950 5100
 Wire Wire Line
 	3950 5100 3950 5400
 Wire Wire Line
@@ -427,27 +459,27 @@ Wire Wire Line
 Wire Wire Line
 	4150 7000 6450 7000
 Wire Wire Line
-	9650 5000 9750 5000
+	9650 5000 9850 5000
 Wire Wire Line
 	9750 5150 9750 5000
 Connection ~ 9750 5000
 Wire Wire Line
-	10150 5000 10250 5000
+	10150 5000 10350 5000
 Wire Wire Line
 	10250 5000 10250 5150
 Connection ~ 10250 5000
 Wire Wire Line
-	10650 5000 10750 5000
+	10650 5000 11650 5000
 Wire Wire Line
 	10750 5000 10750 5150
 Wire Wire Line
 	9750 5450 9750 5600
 Wire Wire Line
-	9750 5600 10250 5600
+	9750 5600 11250 5600
 Wire Wire Line
 	10750 5600 10750 5450
 Wire Wire Line
-	10250 5450 10250 5600
+	10250 5450 10250 5750
 Connection ~ 10250 5600
 Wire Wire Line
 	9350 5000 6100 5000
@@ -471,7 +503,7 @@ Wire Wire Line
 Wire Wire Line
 	13650 5100 13150 5100
 Wire Wire Line
-	12250 5100 12300 5100
+	12250 5100 12850 5100
 Wire Wire Line
 	12300 5750 12300 5100
 Connection ~ 12300 5100
@@ -508,7 +540,7 @@ Wire Wire Line
 	14050 7300 14050 7850
 NoConn ~ 13650 7200
 $Comp
-L Envelope-rescue:R R8
+L R R8
 U 1 1 5B5DFA51
 P 13000 7100
 F 0 "R8" V 13080 7100 50  0000 C CNN
@@ -521,7 +553,7 @@ $EndComp
 Wire Wire Line
 	13150 7100 13650 7100
 $Comp
-L Envelope-rescue:R R9
+L R R9
 U 1 1 5B5E00C0
 P 12550 7400
 F 0 "R9" V 12630 7400 50  0000 C CNN
@@ -536,7 +568,7 @@ Wire Wire Line
 Wire Wire Line
 	12550 7100 12850 7100
 $Comp
-L power:GND #PWR08
+L GND #PWR08
 U 1 1 5B5E0B30
 P 12550 7850
 F 0 "#PWR08" H 12550 7600 50  0001 C CNN
@@ -551,7 +583,7 @@ Wire Wire Line
 NoConn ~ 2550 2400
 NoConn ~ 2550 3700
 $Comp
-L power:GND #PWR09
+L GND #PWR09
 U 1 1 5B5E293B
 P 2150 4000
 F 0 "#PWR09" H 2150 3750 50  0001 C CNN
@@ -564,7 +596,7 @@ $EndComp
 Wire Wire Line
 	2150 4000 2150 3800
 $Comp
-L power:GND #PWR010
+L GND #PWR010
 U 1 1 5B5E2A92
 P 2150 2750
 F 0 "#PWR010" H 2150 2500 50  0001 C CNN
@@ -577,7 +609,7 @@ $EndComp
 Wire Wire Line
 	2150 2750 2150 2500
 $Comp
-L power:GND #PWR011
+L GND #PWR011
 U 1 1 5B5E2F4C
 P 2150 8950
 F 0 "#PWR011" H 2150 8700 50  0001 C CNN
@@ -591,7 +623,7 @@ Wire Wire Line
 	2150 8950 2150 8600
 NoConn ~ 2550 8500
 $Comp
-L Envelope-rescue:R R12
+L R R12
 U 1 1 5B5E35C2
 P 3450 3600
 F 0 "R12" V 3530 3600 50  0000 C CNN
@@ -604,7 +636,7 @@ $EndComp
 Wire Wire Line
 	2550 3600 3300 3600
 $Comp
-L Envelope-rescue:D_Schottky D5
+L D_Schottky D5
 U 1 1 5B5E3F21
 P 3700 3400
 F 0 "D5" H 3700 3500 50  0000 C CNN
@@ -615,7 +647,7 @@ F 3 "" H 3700 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:D_Schottky D6
+L D_Schottky D6
 U 1 1 5B5E4620
 P 3700 3800
 F 0 "D6" H 3700 3900 50  0000 C CNN
@@ -626,7 +658,7 @@ F 3 "" H 3700 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:R R13
+L R R13
 U 1 1 5B5E46E4
 P 3950 3600
 F 0 "R13" V 4030 3600 50  0000 C CNN
@@ -637,9 +669,9 @@ F 3 "" H 3950 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3700 3550 3700 3600
+	3700 3550 3700 3650
 $Comp
-L power:GND #PWR012
+L GND #PWR012
 U 1 1 5B5E4D4F
 P 3700 4000
 F 0 "#PWR012" H 3700 3750 50  0001 C CNN
@@ -652,7 +684,7 @@ $EndComp
 Wire Wire Line
 	3700 4000 3700 3950
 $Comp
-L power:+5V #PWR013
+L +5V #PWR013
 U 1 1 5B5E50B6
 P 3700 3150
 F 0 "#PWR013" H 3700 3000 50  0001 C CNN
@@ -665,10 +697,10 @@ $EndComp
 Wire Wire Line
 	3700 3150 3700 3250
 Wire Wire Line
-	3600 3600 3700 3600
+	3600 3600 3800 3600
 Connection ~ 3700 3600
 $Comp
-L Envelope-rescue:R R10
+L R R10
 U 1 1 5B5E5F62
 P 3450 2300
 F 0 "R10" V 3530 2300 50  0000 C CNN
@@ -681,7 +713,7 @@ $EndComp
 Wire Wire Line
 	2550 2300 3300 2300
 $Comp
-L Envelope-rescue:D_Schottky D3
+L D_Schottky D3
 U 1 1 5B5E5F69
 P 3700 2100
 F 0 "D3" H 3700 2200 50  0000 C CNN
@@ -692,7 +724,7 @@ F 3 "" H 3700 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:D_Schottky D4
+L D_Schottky D4
 U 1 1 5B5E5F6F
 P 3700 2500
 F 0 "D4" H 3700 2600 50  0000 C CNN
@@ -703,7 +735,7 @@ F 3 "" H 3700 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:R R11
+L R R11
 U 1 1 5B5E5F75
 P 3950 2300
 F 0 "R11" V 4030 2300 50  0000 C CNN
@@ -714,9 +746,9 @@ F 3 "" H 3950 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3700 2250 3700 2300
+	3700 2250 3700 2350
 $Comp
-L power:GND #PWR014
+L GND #PWR014
 U 1 1 5B5E5F7C
 P 3700 2700
 F 0 "#PWR014" H 3700 2450 50  0001 C CNN
@@ -729,7 +761,7 @@ $EndComp
 Wire Wire Line
 	3700 2700 3700 2650
 $Comp
-L power:+5V #PWR015
+L +5V #PWR015
 U 1 1 5B5E5F83
 P 3700 1850
 F 0 "#PWR015" H 3700 1700 50  0001 C CNN
@@ -742,7 +774,7 @@ $EndComp
 Wire Wire Line
 	3700 1850 3700 1950
 Wire Wire Line
-	3600 2300 3700 2300
+	3600 2300 3800 2300
 Connection ~ 3700 2300
 Wire Wire Line
 	4100 2300 5350 2300
@@ -755,7 +787,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 3600 4100 3600
 $Comp
-L Envelope-rescue:R R14
+L R R14
 U 1 1 5B5EA2C1
 P 3450 8400
 F 0 "R14" V 3530 8400 50  0000 C CNN
@@ -768,7 +800,7 @@ $EndComp
 Wire Wire Line
 	2550 8400 3300 8400
 $Comp
-L Envelope-rescue:D_Schottky D7
+L D_Schottky D7
 U 1 1 5B5EA2C8
 P 3700 8200
 F 0 "D7" H 3700 8300 50  0000 C CNN
@@ -779,7 +811,7 @@ F 3 "" H 3700 8200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:D_Schottky D8
+L D_Schottky D8
 U 1 1 5B5EA2CE
 P 3700 8600
 F 0 "D8" H 3700 8700 50  0000 C CNN
@@ -790,7 +822,7 @@ F 3 "" H 3700 8600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-rescue:R R15
+L R R15
 U 1 1 5B5EA2D4
 P 3950 8400
 F 0 "R15" V 4030 8400 50  0000 C CNN
@@ -801,9 +833,9 @@ F 3 "" H 3950 8400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3700 8350 3700 8400
+	3700 8350 3700 8450
 $Comp
-L power:GND #PWR016
+L GND #PWR016
 U 1 1 5B5EA2DB
 P 3700 8800
 F 0 "#PWR016" H 3700 8550 50  0001 C CNN
@@ -816,7 +848,7 @@ $EndComp
 Wire Wire Line
 	3700 8800 3700 8750
 $Comp
-L power:+5V #PWR017
+L +5V #PWR017
 U 1 1 5B5EA2E2
 P 3700 7950
 F 0 "#PWR017" H 3700 7800 50  0001 C CNN
@@ -829,56 +861,10 @@ $EndComp
 Wire Wire Line
 	3700 7950 3700 8050
 Wire Wire Line
-	3600 8400 3700 8400
+	3600 8400 3800 8400
 Connection ~ 3700 8400
 Wire Wire Line
 	5100 8400 4100 8400
 Wire Wire Line
 	5100 7100 5100 8400
-Wire Wire Line
-	3550 6000 3950 6000
-Wire Wire Line
-	3150 6000 3550 6000
-Wire Wire Line
-	2750 6000 3150 6000
-Wire Wire Line
-	3550 5100 3950 5100
-Wire Wire Line
-	3150 5100 3550 5100
-Wire Wire Line
-	2750 5100 3150 5100
-Wire Wire Line
-	2350 6000 2350 6250
-Wire Wire Line
-	2350 5100 2350 5400
-Wire Wire Line
-	9750 5000 9850 5000
-Wire Wire Line
-	10250 5000 10350 5000
-Wire Wire Line
-	10250 5600 10750 5600
-Wire Wire Line
-	10250 5600 10250 5750
-Wire Wire Line
-	10750 5000 11250 5000
-Wire Wire Line
-	10750 5600 11250 5600
-Wire Wire Line
-	11250 5000 11650 5000
-Wire Wire Line
-	12300 5100 12550 5100
-Wire Wire Line
-	12550 5100 12850 5100
-Wire Wire Line
-	3700 3600 3700 3650
-Wire Wire Line
-	3700 3600 3800 3600
-Wire Wire Line
-	3700 2300 3700 2350
-Wire Wire Line
-	3700 2300 3800 2300
-Wire Wire Line
-	3700 8400 3700 8450
-Wire Wire Line
-	3700 8400 3800 8400
 $EndSCHEMATC

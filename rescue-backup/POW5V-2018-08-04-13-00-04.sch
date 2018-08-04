@@ -1,6 +1,38 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:Envelope-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +47,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Envelope-rescue:L7805 U2
+L L7805 U2
 U 1 1 5B5B3210
 P 6350 3300
 F 0 "U2" H 6200 3425 50  0000 C CNN
@@ -26,7 +58,7 @@ F 3 "" H 6350 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:Conn_02x05_Odd_Even J3
+L Conn_02x05_Odd_Even J3
 U 1 1 5B5C8C68
 P 4100 3650
 F 0 "J3" H 4150 3950 50  0000 C CNN
@@ -37,7 +69,7 @@ F 3 "" H 4100 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:D D2
+L D D2
 U 1 1 5B5C8D69
 P 4800 4000
 F 0 "D2" H 4800 4100 50  0000 C CNN
@@ -48,7 +80,7 @@ F 3 "" H 4800 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:D D1
+L D D1
 U 1 1 5B5C8E1A
 P 4800 3300
 F 0 "D1" H 4800 3400 50  0000 C CNN
@@ -59,7 +91,7 @@ F 3 "" H 4800 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Envelope-rescue:CP C7
+L CP C7
 U 1 1 5B5C8FBF
 P 5200 3450
 F 0 "C7" H 5225 3550 50  0000 L CNN
@@ -70,7 +102,7 @@ F 3 "" H 5200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:CP C8
+L CP C8
 U 1 1 5B5C900F
 P 5200 3850
 F 0 "C8" H 5225 3950 50  0000 L CNN
@@ -81,7 +113,7 @@ F 3 "" H 5200 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR026
+L GND #PWR026
 U 1 1 5B5C92CF
 P 3700 3700
 F 0 "#PWR026" H 3700 3450 50  0001 C CNN
@@ -92,7 +124,7 @@ F 3 "" H 3700 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR027
+L +12V #PWR027
 U 1 1 5B5C945C
 P 5450 3050
 F 0 "#PWR027" H 5450 2900 50  0001 C CNN
@@ -103,7 +135,7 @@ F 3 "" H 5450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-12V #PWR30
+L -12V #PWR30
 U 1 1 5B5C94D1
 P 5450 4250
 F 0 "#PWR30" H 5450 4350 50  0001 C CNN
@@ -114,7 +146,7 @@ F 3 "" H 5450 4250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Envelope-rescue:C C9
+L C C9
 U 1 1 5B5C9715
 P 5850 3450
 F 0 "C9" H 5875 3550 50  0000 L CNN
@@ -125,7 +157,7 @@ F 3 "" H 5850 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:C C10
+L C C10
 U 1 1 5B5C9772
 P 6850 3450
 F 0 "C10" H 6875 3550 50  0000 L CNN
@@ -136,7 +168,7 @@ F 3 "" H 6850 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-rescue:CP C11
+L CP C11
 U 1 1 5B5C98E8
 P 7200 3450
 F 0 "C11" H 7225 3550 50  0000 L CNN
@@ -147,7 +179,7 @@ F 3 "" H 7200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR028
+L +5V #PWR028
 U 1 1 5B5C99D3
 P 7450 3200
 F 0 "#PWR028" H 7450 3050 50  0001 C CNN
@@ -158,7 +190,7 @@ F 3 "" H 7450 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG029
+L PWR_FLAG #FLG029
 U 1 1 5B5DAB7A
 P 5200 3050
 F 0 "#FLG029" H 5200 3125 50  0001 C CNN
@@ -169,7 +201,7 @@ F 3 "" H 5200 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG030
+L PWR_FLAG #FLG030
 U 1 1 5B5DABA7
 P 3700 3600
 F 0 "#FLG030" H 3700 3675 50  0001 C CNN
@@ -180,7 +212,7 @@ F 3 "" H 3700 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG031
+L PWR_FLAG #FLG031
 U 1 1 5B5DABCD
 P 5200 4250
 F 0 "#FLG031" H 5200 4325 50  0001 C CNN
