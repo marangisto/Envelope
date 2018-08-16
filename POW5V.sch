@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Envelope-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -258,32 +259,8 @@ F 1 "Conn_02x05_Odd_Even" H 4150 3976 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 4100 3650 50  0001 C CNN
 F 3 "~" H 4100 3650 50  0001 C CNN
 	1    4100 3650
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	3900 3450 4400 3450
-Connection ~ 4400 3450
-Wire Wire Line
-	3900 3550 4400 3550
-Wire Wire Line
-	3900 3750 4400 3750
-Wire Wire Line
-	3900 3850 4400 3850
-Connection ~ 4400 3850
-Wire Wire Line
-	4400 3750 4400 3650
-Connection ~ 4400 3750
-Connection ~ 4400 3650
-Wire Wire Line
-	4400 3650 4400 3550
-Connection ~ 4400 3550
-Wire Wire Line
-	3900 3550 3900 3650
-Connection ~ 3900 3550
-Connection ~ 3900 3650
-Wire Wire Line
-	3900 3650 3900 3750
-Connection ~ 3900 3750
 $Comp
 L power:+5V #PWR043
 U 1 1 5B8C93F8
@@ -334,4 +311,28 @@ F 3 "" H 8100 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 4100 8100 3950
+Wire Wire Line
+	3900 3850 4400 3850
+Connection ~ 4400 3850
+Wire Wire Line
+	3900 3750 4400 3750
+Wire Wire Line
+	3900 3550 4400 3550
+Wire Wire Line
+	3900 3450 4400 3450
+Connection ~ 4400 3450
+Wire Wire Line
+	3900 3550 3900 3650
+Connection ~ 3900 3550
+Connection ~ 3900 3650
+Wire Wire Line
+	3900 3650 3900 3750
+Connection ~ 3900 3750
+Wire Wire Line
+	4400 3750 4400 3650
+Connection ~ 4400 3750
+Connection ~ 4400 3650
+Wire Wire Line
+	4400 3550 4400 3650
+Connection ~ 4400 3550
 $EndSCHEMATC
